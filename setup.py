@@ -31,7 +31,7 @@ setup(
         'sentencepiece==0.1.99',
         's3fs',
         'torch>=2.0.0',
-        'torchaudio>=2.0.2',
+        'torchaudio>=2.0.0',
         'torchmetrics==0.11.4',
         'tqdm',
         'transformers',
