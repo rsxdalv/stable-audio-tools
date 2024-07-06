@@ -29,7 +29,6 @@ setup(
         'PyWavelets==1.4.1',
         'safetensors',
         'sentencepiece==0.1.99',
-        's3fs',
         'torch>=2.0.0',
         'torchaudio>=2.0.0',
         'torchmetrics==0.11.4',
