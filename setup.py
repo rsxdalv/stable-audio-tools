@@ -8,7 +8,7 @@ setup(
     description='Training and inference tools for generative audio models from Stability AI',
     packages=find_packages(),  
     install_requires=[
-        'aeiou @ git+https://github.com/rsxdalv/aeiou@main#egg=aeiou'
+        'aeiou @ git+https://github.com/rsxdalv/aeiou@main#egg=aeiou',
         'alias-free-torch==0.0.6',
         'auraloss==0.4.0',
         'descript-audio-codec==1.0.0',
