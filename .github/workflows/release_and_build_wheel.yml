@@ -21,7 +21,13 @@ jobs:
       - name: Retrieve version
         id: version
         run: |
-          echo "TAG_NAME=v$(grep -i -o -P '(?<=version=\')[^\"]+(?=\')' setup.py)" >> $GITHUB_ENV
+          version=$(grep -oP "(?<=version=['\"])[^'\"]+(?=['\"])" setup.py)
+          if [ -z "$version" ]; then
+            echo "Version not found. Check setup.py format." >&2
+            exit 1
+          fi
+          echo "TAG_NAME=v$version" >> $GITHUB_ENV
+          echo "Extracted version: v$version"
 
       # Generate Changelog
       - name: Changelog
