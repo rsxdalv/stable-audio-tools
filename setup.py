@@ -12,7 +12,7 @@ setup(
         'alias-free-torch==0.0.6',
         'auraloss==0.4.0',
         'descript-audio-codec==1.0.0',
-        'einops==0.7.0',
+        'einops>=0.7.0',
         'einops-exts==0.0.4',
         'ema-pytorch==0.2.3',
         'encodec==0.1.1',
@@ -38,6 +38,6 @@ setup(
         'vector-quantize-pytorch==1.9.14',
         'wandb==0.15.4',
         'webdataset==0.2.48',
-        'x-transformers<1.27.0'
+        'x-transformers>=1.31.14'
     ],
 )
