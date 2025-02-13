@@ -25,7 +25,7 @@ setup(
         'prefigure==0.0.9',
         'pytorch_lightning==2.1.0',
         'PyWavelets==1.4.1',
-        'pypesq==1.2.4',
+        # 'pypesq==1.2.4', # removed for inference only
         'safetensors',
         'sentencepiece==0.1.99',
         'torch>=2.0.1',
