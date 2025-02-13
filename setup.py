@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='stable-audio-tools',
-    version='0.0.18',
+    version='0.0.20',
     url='https://github.com/Stability-AI/stable-audio-tools.git',
     author='Stability AI',
     description='Training and inference tools for generative audio models from Stability AI',
@@ -27,7 +27,7 @@ setup(
         'PyWavelets==1.4.1',
         # 'pypesq==1.2.4', # removed for inference only
         'safetensors',
-        'sentencepiece==0.1.99',
+        'sentencepiece==0.2.0',
         'torch>=2.0.1',
         'torchaudio>=2.0.2',
         'torchmetrics==0.11.4',
