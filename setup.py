@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='stable-audio-tools',
-    version='0.0.20',
+    version='0.0.21',
     url='https://github.com/Stability-AI/stable-audio-tools.git',
     author='Stability AI',
     description='Training and inference tools for generative audio models from Stability AI',
@@ -13,7 +13,7 @@ setup(
         'descript-audio-codec==1.0.0',
         'einops',
         'einops-exts',
-        'ema-pytorch==0.2.3',
+        'ema-pytorch>=0.2.3',
         'encodec==0.1.1',
         'gradio>=3.42.0',
         'huggingface_hub',
