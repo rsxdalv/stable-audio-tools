@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='stable-audio-tools',
-    version='0.0.21',
+    version='0.0.22',
     url='https://github.com/Stability-AI/stable-audio-tools.git',
     author='Stability AI',
     description='Training and inference tools for generative audio models from Stability AI',
@@ -21,7 +21,7 @@ setup(
         'k-diffusion==0.1.1',
         'laion-clap==1.1.4',
         'local-attention==1.8.6',
-        'pandas==2.0.2',
+        'pandas>=1.0,<3.0',
         'prefigure==0.0.9',
         'pytorch_lightning==2.1.0',
         # 'PyWavelets==1.4.1', # removed for inference only
