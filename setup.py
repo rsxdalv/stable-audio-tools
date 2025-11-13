@@ -6,7 +6,7 @@ setup(
     url='https://github.com/Stability-AI/stable-audio-tools.git',
     author='Stability AI',
     description='Training and inference tools for generative audio models from Stability AI',
-    packages=find_packages(),
+    packages=find_packages(),  
     install_requires=[
         'alias-free-torch==0.0.6',
         'auraloss==0.4.0',
@@ -15,7 +15,7 @@ setup(
         'einops-exts',
         'ema-pytorch>=0.2.3',
         'encodec==0.1.1',
-        'gradio>=3.42.0',
+        'gradio>=5.20.0',
         'huggingface_hub',
         'importlib-resources==5.12.0',
         'k-diffusion==0.1.1',
@@ -36,7 +36,6 @@ setup(
         'v-diffusion-pytorch==0.0.2',
         'vector-quantize-pytorch==1.14.41',
         'wandb==0.15.4',
-        'webdataset==0.2.100',
-        'x-transformers>=1.31.14'
+        'webdataset==0.2.100'
     ],
 )
