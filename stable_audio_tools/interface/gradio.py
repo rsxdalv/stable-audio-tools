@@ -157,7 +157,7 @@ def generate_uncond(
 
     audio = rearrange(audio, "b d n -> d (b n)")
 
-    audio = audio.to(torch.float32).div(torch.max(torch.abs(audio))).clamp(-1, 1).mul(32767).to(torch.int16).cpu()
+    audio = audio.to(torch.float32).div(torch.max(torch.abs(audio))).clamp(-1, 1).cpu()
 
     torchaudio.save("output.wav", audio, sample_rate)
 
